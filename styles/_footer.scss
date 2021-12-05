@@ -18,11 +18,20 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        padding-top: 5px;
+    }
 }
 .footer__1__ul--li {
     list-style-type: none;
     padding-left: 10px;
     padding-right: 10px;
+    @include mobile {
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
 
 }
 .footer__1__ul--li:hover{
@@ -37,11 +46,20 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        padding-top: 5px;
+    }
 }
 .footer__2__ul--li {
     list-style-type: none;
     padding-left: 10px;
     padding-right: 10px;
+    @include mobile {
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
 
 }
 .footer__2__ul--li1 {
