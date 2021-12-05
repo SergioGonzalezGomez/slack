@@ -1,0 +1,16 @@
+.section2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $primarycolor;
+    flex-wrap: wrap;
+    @include mobile {
+        flex-wrap: wrap;
+    }
+}
+.section2 img {
+    @include mobile {
+        flex-wrap: wrap;
+        width: 30px;
+    }
+}

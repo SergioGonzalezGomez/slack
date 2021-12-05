@@ -1,0 +1,66 @@
+.section5 {
+    background-color: rgb(235, 231, 231);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    @include mobile {
+        flex-wrap: wrap;
+        height: 900px;
+    }
+    &__div1{
+        display: flex;
+        flex-direction: column;
+        padding-right: 150px;
+        padding-left: 150px;
+        @include mobile {
+            flex-wrap: wrap;
+            text-align: center;
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+      
+      }
+
+        
+    &__div1--a {
+        margin: 5px;
+        text-decoration: underline;
+        color: dodgerblue;
+        
+        
+    }   
+    &__div1 p {
+        font-family: sans-serif;
+        @include mobile {
+            flex-wrap: wrap;
+            font-size: 15px;
+            text-align:center;
+            width: 300px;
+            height: 100px;
+            padding-bottom: 5px;
+            
+        }
+    } 
+    &__div2 img {
+        width: 450px;
+        padding-top: 50px;
+        margin-right: 100px;
+        @include mobile {
+            visibility: hidden;
+        }
+    }
+    
+}
+.section5__div1--video {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.section5__div1--video div {
+    padding: 15px;
+}
