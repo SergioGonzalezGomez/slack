@@ -42,16 +42,18 @@
         }
         
     }   
-    &__div1 p {
+    &__div1__p {
         font-family: sans-serif;
+        font-size: 16px;
+        text-align: left;
         @include mobile {
             flex-wrap: wrap;
-            font-size: 13px;
-            text-align:center;
+            text-align:left;
             width: 300px;
             height: 100px;
             font-size: 16px;
             margin-bottom: 5px;
+            margin-left: 90px;
         }
     } 
     &__div2 img {
@@ -76,4 +78,18 @@
 }
 .section3__div1--video div {
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.section3__div1__p {
+    align-items: center;
+    margin-left: 0px;
+    @include mobile {
+        margin-left: 50px;
+    }
+}
+.section3__video__p {
+    text-align: left;
+    font-size: 15px;
+    padding-top: 5px;
 }

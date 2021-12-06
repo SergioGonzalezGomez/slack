@@ -41,9 +41,14 @@
 }
 .section4__div1--p2 {
     font-size: 16px;
-    padding-left: 200px;
+    padding-left: 100px;
     @include mobile {
-        padding-left: 20px;
-        font-size: 12px;
+        padding-left: 0px;
+        padding-right: 60px;
+        font-size: 16px;
     }
+}
+.section4__div1__p {
+    font-size: 16px;
+    text-align: left;
 }
