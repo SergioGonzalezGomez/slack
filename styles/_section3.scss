@@ -12,14 +12,10 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-right: 300px;
+        padding-right: 200px;
         padding-left: 100px;
         
-        @include desktop {
-            margin: auto;
-            padding-right: 300px;
-            padding-left: 300px;
-        }
+        
         
         @include mobile {
             flex-wrap: wrap;
@@ -85,11 +81,18 @@
     align-items: center;
     margin-left: 0px;
     @include mobile {
-        margin-left: 50px;
+        margin-left: 10px;
+        width: auto;
     }
 }
 .section3__video__p {
     text-align: left;
     font-size: 15px;
     padding-top: 5px;
+}
+.section3__div1--video iframe {
+    width: 300px;
+    @include mobile {
+        width: 300px;
+    }
 }

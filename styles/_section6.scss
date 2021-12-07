@@ -13,6 +13,7 @@
             padding: 30px 0px;
             @include mobile {
                 font-size: 25px;
+                
             }
             
         }
@@ -35,7 +36,7 @@
     margin: auto;
 }
 .section6__div2__item1--h1 {
-    padding: 10px;
+    padding: 15px;
     color: white;
     background-color: darkmagenta;
     text-align: center;
@@ -43,6 +44,12 @@
     align-items: center;
     border-radius: 6px;
     margin: auto;
+    @include mobile {
+        margin-right: 300px;
+        margin-top: 20px;
+        
+        
+    }
 }
 .section6__div2__item1--h4 {
     text-align: center;

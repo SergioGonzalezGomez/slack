@@ -1,7 +1,8 @@
 
 body {
+    
     margin: 0px;
-    font-family: sans-serif;
+    font-family: "roboto";
     display: flex;
     flex-direction: column;
 }
@@ -38,7 +39,7 @@ nav {
         }
         
         &__li--white {
-            border: solid rgb(202, 16, 202) 3px;
+            border: solid purple 3px;
             padding: 6px;
             border-radius: 5px;
             color: purple;
@@ -55,7 +56,7 @@ nav {
             border-radius: 6px;
             margin: 6px;
             @include mobile {
-                padding: 4px;
+                padding: 10px 64px;
                 font-size: 14px;
             }
         }
@@ -66,13 +67,14 @@ nav {
     text-decoration: none;
 }
 .navbar__ul__li--white:hover{
-    border: solid rgb(141, 8, 141) 3px;
+    border: solid rgb(141, 8, 141) 4px;
     text-decoration: none;
 }
 .navbar__ul__li {
     text-align: center;
     text-decoration: none;
     padding: 10px;
+    font-family: "roboto";
     @include mobile {
         flex-wrap: wrap;
         font-size: 14px;
@@ -90,5 +92,17 @@ nav {
     display: flex;
     @include mobile {
         width: 50px;
+        padding-right: 40px;
+    }
+}
+.navbar__ul__li1 {
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    font-family: "roboto";
+    font-weight: bold;
+    @include mobile {
+        flex-wrap: wrap;
+        font-size: 14px;
     }
 }

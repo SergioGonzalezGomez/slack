@@ -5,12 +5,13 @@
     background-color: $primarycolor;
     flex-wrap: wrap;
     @include mobile {
-        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
     }
 }
 .section2 img {
     @include mobile {
         flex-wrap: wrap;
-        width: 30px;
+        width: 50px;
     }
 }
