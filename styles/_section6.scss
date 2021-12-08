@@ -62,8 +62,9 @@
     padding-left: 14px;
     font-size: 20px;
     @include mobile {
-        padding: 25px;
+        padding: 16px;
         padding-left: 15px;
+        width: 90%;
     }
 }
 .section6__div2__item1--p {
@@ -73,6 +74,8 @@
     font-size: 20px;
     @include mobile {
         margin-bottom: 40px;
+        margin: 0px;
+        width: 340px;
     }
 }
 .section6__div2__item1--p a{

@@ -1,7 +1,7 @@
 
 body {
     margin: 0;
-    
+    width: 100%;
     font-family: "roboto";
     display: flex;
     flex-direction: column;
@@ -42,6 +42,7 @@ nav {
         @include mobile {
             flex-direction: column;
             justify-content: center;
+            padding-right: 35px;
             
         }
         
@@ -99,10 +100,13 @@ nav {
 .navbar__ul__icon {
     width: 35px;
     display: flex;
+    padding-right: 0px;
+    padding-top: 10px;
     @include mobile {
         width: 80px;
         padding-left: 40px;
         padding-bottom: 20px;
+        
         
     }
 }

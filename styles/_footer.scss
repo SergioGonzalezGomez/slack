@@ -95,8 +95,8 @@ list-style-type: none;
 
 hr {
     border: solid gray 1px;
-    width: 100%;
+    width: 95%;
     @include mobile {
-        width: 100%;
+        width: 95%;
     }
 }
