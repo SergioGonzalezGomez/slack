@@ -1,14 +1,16 @@
 
 body {
+    margin: 0;
     
-    margin: 0px;
     font-family: "roboto";
     display: flex;
     flex-direction: column;
 }
+
 nav {
-    
+    position: fixed;
     background-color: $primarycolor;
+    width: 100%;
     
     @include tablet {
         display: flex;
@@ -24,6 +26,10 @@ nav {
 .navbar { 
     display: flex; 
     justify-content: space-evenly;
+    border-radius: 100px;
+    @include mobile {
+        border-radius: 0px;
+    }
     
     
      
@@ -32,18 +38,20 @@ nav {
         flex-direction: row;
         justify-content: space-evenly;
         list-style-type: none;
+        padding-top: 10px;
         @include mobile {
-            flex-wrap: wrap;
+            flex-direction: column;
             justify-content: center;
             
         }
         
         &__li--white {
             border: solid purple 3px;
-            padding: 6px;
+            padding: 10px;
             border-radius: 5px;
             color: purple;
             margin: 6px;
+            
             @include mobile {
                 padding: 4px;
                 font-size: 14px;
@@ -75,9 +83,10 @@ nav {
     text-decoration: none;
     padding: 10px;
     font-family: "roboto";
+    padding-top: 17px;
     @include mobile {
         flex-wrap: wrap;
-        font-size: 14px;
+        font-size: 18px;
         :hover {
             text-decoration: underline;
         }
@@ -87,12 +96,14 @@ nav {
 .navbar__ul__li:hover {
     text-decoration:underline;
 }
-.navbar img {
+.navbar__ul__icon {
     width: 35px;
     display: flex;
     @include mobile {
-        width: 50px;
-        padding-right: 40px;
+        width: 80px;
+        padding-left: 40px;
+        padding-bottom: 20px;
+        
     }
 }
 .navbar__ul__li1 {
@@ -101,8 +112,10 @@ nav {
     padding: 10px;
     font-family: "roboto";
     font-weight: bold;
+    padding-top: 16px;
+    font-size: 20px;
     @include mobile {
         flex-wrap: wrap;
-        font-size: 14px;
+        font-size: 24px;
     }
 }

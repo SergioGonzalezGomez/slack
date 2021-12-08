@@ -25,9 +25,11 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    padding-bottom: 80px;
     @include mobile {
         display: flex;
         flex-direction: column;
+        padding:10px;
     }
 }
 .section6__div2--item1{
@@ -41,24 +43,37 @@
     background-color: darkmagenta;
     text-align: center;
     width: 20px;
-    align-items: center;
+    align-items: left;
     border-radius: 6px;
-    margin: auto;
+    margin-left: 12px;
     @include mobile {
         margin-right: 300px;
         margin-top: 20px;
+        margin-left: 15px;
+        margin-bottom: 10px;
         
         
     }
 }
 .section6__div2__item1--h4 {
-    text-align: center;
+    text-align: left;
     margin: auto;
-    padding: 25px ;
+    padding: 25px;
+    padding-left: 14px;
+    font-size: 20px;
+    @include mobile {
+        padding: 25px;
+        padding-left: 15px;
+    }
 }
 .section6__div2__item1--p {
     margin: auto;
     padding: 5px 15px;
+    width: 350px;
+    font-size: 20px;
+    @include mobile {
+        margin-bottom: 40px;
+    }
 }
 .section6__div2__item1--p a{
     text-decoration: underline;

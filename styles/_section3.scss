@@ -4,16 +4,22 @@
     flex-direction: row;
     justify-content: center;
     padding: 20px;
+    padding-bottom: 50px;
+    padding-left: 100px;
     @include mobile {
         flex-wrap: wrap;
-        height: 900px;
+        height: 1000px;
+        padding: 10px;
+        
     }
     &__div1{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-right: 200px;
+        padding-right: 150px;
         padding-left: 100px;
+        padding-top: 20px;
+        
         
         
         
@@ -39,37 +45,49 @@
         
     }   
     &__div1__p {
-        font-family: sans-serif;
-        font-size: 16px;
+        font-family: "roboto";
+        font-size: 18px;
         text-align: left;
+        width: 450px;
         @include mobile {
             flex-wrap: wrap;
-            text-align:left;
+            text-align:center;
             width: 300px;
             height: 100px;
-            font-size: 16px;
+            font-size: 18px;
             margin-bottom: 5px;
             margin-left: 90px;
+            padding-bottom: 30px;
         }
     } 
     &__div2 img {
         width: 450px;
         padding-top: 50px;
-        margin-right: 100px;
+        margin-right: 200px;
         @include mobile {
             visibility: hidden;
         }
     }
     
 }
+.section3__div1--h1 {
+    font-size: 30px;
+    width: 500px;
+    @include mobile {
+        font-size: 24px;
+        width: auto;
+    }
+}
 .section3__div1--video {
     display: flex;
     flex-direction: row;
-    padding: 5px;
+    
+    padding-right: 80px;
     @include mobile {
         display: flex;
         flex-direction: column;
         margin-top: 30px;
+        padding:5px;
     }
 }
 .section3__div1--video div {
@@ -88,11 +106,17 @@
 .section3__video__p {
     text-align: left;
     font-size: 15px;
-    padding-top: 5px;
+    padding-top: 20px;
+    @include mobile {
+        text-align: center;
+    }
 }
 .section3__div1--video iframe {
-    width: 300px;
+    width: 250px;
+    margin-right: 20px;
+    border-radius: 10px;
     @include mobile {
         width: 300px;
+        margin: 0px;
     }
 }

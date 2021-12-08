@@ -4,15 +4,19 @@
     flex-direction: row;
     justify-content: center;
     padding: 20px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    padding-left: 100px;
     @include mobile {
         flex-wrap: wrap;
         height: 900px;
+        padding: 20px;
     }
     &__div1{
         display: flex;
         flex-direction: column;
-        padding-right: 150px;
-        padding-left: 150px;
+        padding-right: 250px;
+        padding-left: 80px;
         @include mobile {
             flex-wrap: wrap;
             text-align: center;
@@ -34,9 +38,10 @@
         
     }   
     &__div1__p {
-        font-family: sans-serif;
-        font-size: 16px;
+        font-family: "roboto";
+        font-size: 18px;
         text-align: left;
+        width: 500px;
         @include mobile {
             flex-wrap: wrap;
             font-size: 15px;
@@ -51,13 +56,22 @@
     &__div2 img {
         width: 450px;
         padding-top: 50px;
-        margin-right: 100px;
+        margin-right: 200px;
         @include mobile {
             visibility: hidden;
             width: 0%;
         }
     }
     
+}
+
+.section5__div1--h1 {
+    font-size: 30px;
+    width: 500px;
+    @include mobile {
+        font-size: 24px;
+        width: auto;
+    }
 }
 .section5__div1--video {
     display: flex;
@@ -74,12 +88,15 @@
 .section5__video__p {
     text-align: left;
     font-size: 15px;
+    width: 200px;
     @include mobile {
         text-align: center;
+        width: auto;
     }
 }
 .section5__div1--video iframe {
-    width: 300px;
+    width: 250px;
+    border-radius: 10px;
     @include mobile {
         width: 300px;
     }

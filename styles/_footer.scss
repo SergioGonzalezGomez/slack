@@ -67,6 +67,7 @@ section {
     list-style-type: none;
     padding-left: 10px;
     padding-right: 10px;
+    
     @include mobile {
         padding-bottom: 5px;
         padding-top: 5px;

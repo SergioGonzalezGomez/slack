@@ -1,7 +1,7 @@
 .section4 {
     background-color: $secondarycolor;
     display: flex;
-    padding-left: 50px;
+    padding-left: 100px;
     @include mobile {
         flex-direction: column;
         padding-left: 0px;
@@ -9,7 +9,7 @@
     
 }
 .section4 img {
-    margin-left: 100px;
+    margin: 20px;
     @include mobile {
         visibility: hidden;
         display: none;
@@ -19,20 +19,33 @@
     
     padding-top: 20px;
     padding-left: 220px;
-    padding-right: 300px;
+    padding-right: 200px;
     @include mobile {
         padding: 10px;
     }
     
     
 }
+.section4__div1--h1 {
+    font-size: 30px;
+    width: 500px;
+    @include mobile {
+        font-size: 24px;
+        width: auto;
+        text-align: center;
+    }
+}
 .section4__div1 a {
     color: dodgerblue;
     text-decoration: underline;
+   
 }
 .section4__div1 iframe {
     padding-top: 50px;
-    padding-left: 120px;
+    padding-left: 30px;
+    border-radius: 20px;
+    width: 250px;
+    height: 200px;
     @include mobile {
         width: 300px;
         padding-top: 20px;
@@ -42,14 +55,18 @@
 }
 .section4__div1--p2 {
     font-size: 16px;
-    padding-left: 100px;
+    padding-left: 30px;
     @include mobile {
-        padding-left: 30px;
+        padding-left: 0px;
         padding-right: 0px;
         font-size: 16px;
+        text-align: center;
     }
 }
 .section4__div1__p {
-    font-size: 16px;
+    font-size: 18px;
     text-align: left;
+    @include mobile {
+        text-align: center;
+    }
 }

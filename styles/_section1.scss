@@ -2,9 +2,11 @@
     background-color: $primarycolor;
     display: flex;
     flex-direction: row;
+    margin-top: 80px;
     
     @include mobile {
         flex-wrap: wrap;
+        margin: 0;
     }
     
     &__div1 {
@@ -69,7 +71,9 @@
         }
     }
     &__div2 img {
-        margin-right: 40px;
+        margin-right: 60px;
+        margin-top: 40px;
+        border-radius: 20px;
         @include mobile {
             width: 280px;
             margin-top: 20px;
