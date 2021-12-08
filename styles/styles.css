@@ -1392,12 +1392,12 @@ section {
 
 hr {
   border: solid gray 1px;
-  width: 1400px;
+  width: 100%;
 }
 
 @media screen and (max-width: 576px) {
   hr {
-    width: 300px;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
