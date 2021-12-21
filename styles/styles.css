@@ -283,7 +283,7 @@ nav {
 }
 
 .section1__div2 img {
-  margin-right: 60px;
+  padding-right: 10px;
   margin-top: 40px;
   border-radius: 20px;
 }
@@ -355,7 +355,6 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 20px;
   padding-bottom: 50px;
 }
 
@@ -363,7 +362,7 @@ nav {
   .section3 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    height: 1000px;
+    height: 910px;
     padding: 10px;
   }
 }
@@ -380,7 +379,6 @@ nav {
       -ms-flex-pack: center;
           justify-content: center;
   padding-right: 70px;
-  padding-left: 100px;
   padding-top: 20px;
 }
 
@@ -403,8 +401,9 @@ nav {
 
 @media screen and (max-width: 576px) {
   .section3__div1--a {
-    margin: 40px;
+    margin-top: 40px;
     padding-right: 10px;
+    font-size: 18px;
   }
 }
 
@@ -423,22 +422,30 @@ nav {
     width: 300px;
     height: 100px;
     font-size: 18px;
-    margin-bottom: 5px;
-    margin-left: 90px;
-    padding-bottom: 30px;
+    height: 150px;
+    padding: 0%;
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .section3__div2 {
+    visibility: hidden;
+    width: 0%;
+    height: 0%;
   }
 }
 
 .section3__div2 img {
   width: 450px;
   padding-top: 50px;
-  padding-right: 200px;
 }
 
 @media screen and (max-width: 576px) {
   .section3__div2 img {
     visibility: hidden;
     width: 0%;
+    height: 0%;
   }
 }
 
@@ -499,7 +506,6 @@ nav {
 
 @media screen and (max-width: 576px) {
   .section3__div1__p {
-    margin-left: 10px;
     width: auto;
   }
 }
@@ -524,7 +530,7 @@ nav {
 
 @media screen and (max-width: 576px) {
   .section3__div1--video iframe {
-    width: 300px;
+    width: 310px;
     margin: 0px;
   }
 }
@@ -534,7 +540,6 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 100px;
 }
 
 @media screen and (max-width: 576px) {
@@ -549,6 +554,7 @@ nav {
 
 .section4 img {
   margin: 20px;
+  padding-left: 60px;
 }
 
 @media screen and (max-width: 576px) {
@@ -560,8 +566,8 @@ nav {
 
 .section4__div1 {
   padding-top: 20px;
-  padding-left: 180px;
-  padding-right: 100px;
+  padding-left: 0px;
+  padding-right: 70px;
 }
 
 @media screen and (max-width: 576px) {
@@ -588,6 +594,12 @@ nav {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 576px) {
+  .section4__div1 a {
+    text-align: center;
+  }
+}
+
 .section4__div1 iframe {
   padding-top: 50px;
   padding-left: 30px;
@@ -598,10 +610,11 @@ nav {
 
 @media screen and (max-width: 576px) {
   .section4__div1 iframe {
-    width: 300px;
+    width: 310px;
     padding-top: 20px;
     padding-right: 30px;
     padding-left: 20px;
+    border-radius: 20px;
   }
 }
 
@@ -614,7 +627,7 @@ nav {
   .section4__div1--p2 {
     padding-left: 0px;
     padding-right: 0px;
-    font-size: 16px;
+    font-size: 15px;
     text-align: center;
   }
 }
@@ -622,11 +635,14 @@ nav {
 .section4__div1__p {
   font-size: 18px;
   text-align: left;
+  width: 500px;
 }
 
 @media screen and (max-width: 576px) {
   .section4__div1__p {
     text-align: center;
+    width: auto;
+    margin-bottom: 2px;
   }
 }
 
@@ -651,7 +667,7 @@ nav {
   .section5 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    height: 900px;
+    height: 950px;
     padding: 10px;
   }
 }
@@ -664,7 +680,7 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-right: 200px;
+  padding-right: 110px;
   padding-left: 0px;
 }
 
@@ -687,6 +703,7 @@ nav {
   .section5__div1--a {
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 18px;
   }
 }
 
@@ -701,11 +718,10 @@ nav {
   .section5__div1__p {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    font-size: 15px;
+    font-size: 18px;
     text-align: left;
     width: 350px;
-    height: 100px;
-    padding-bottom: 5px;
+    height: 160px;
     margin-left: 20px;
   }
 }
@@ -782,7 +798,7 @@ nav {
 
 @media screen and (max-width: 576px) {
   .section5__div1--video iframe {
-    width: 300px;
+    width: 310px;
   }
 }
 
@@ -1020,7 +1036,7 @@ nav {
 
 @media screen and (max-width: 576px) {
   .section8 {
-    height: 800px;
+    height: 700px;
   }
 }
 
@@ -1030,6 +1046,14 @@ nav {
   text-align: center;
   padding-bottom: 50px;
   padding-top: 100px;
+}
+
+@media screen and (max-width: 576px) {
+  .section8__h1 {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+  }
 }
 
 .section8__div {

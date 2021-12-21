@@ -11,7 +11,7 @@
     background-color: darkmagenta;
     height: 400px;
     @include mobile {
-        height: 800px;
+        height: 700px;
     }
     &__h1{
         color: whitesmoke;
@@ -19,6 +19,11 @@
         text-align: center;
         padding-bottom: 50px;
         padding-top: 100px;
+        @include mobile {
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 0px;
+        }
     }
 }
 .section8__div {
